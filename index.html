@@ -35,7 +35,13 @@
             ban.addEventListener("click", () =>{
                 let res = document.getElementById("reason").value;
                 let proof = document.getElementById("proofs").value;
-                tg.close();
+                let name = document.getElementById("user_name").value;
+                let data = {
+                    res: res,
+                    proofs: proofs,
+                    name: name,
+                }
+                tg.sendData(JSON.stringify(data));
             })
 
         </script>
