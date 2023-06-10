@@ -12,7 +12,7 @@ body {
     font-family: "Roboto";
     font-weight: 200;
     color: var(--tg-theme-text-color);
-    background: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
 
 }
 #div {
@@ -68,7 +68,7 @@ form input {
 	margin-left:39%;
 	width: 23%;
 	height: 15px;
-	border: 1px solid #ff8c00;
+	border: var(--tg-theme-button-color);
 }
 
 button {
