@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles.css">
         <title>Bans</title>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
     </head>
     <body>
         <div id="main">
@@ -20,7 +21,6 @@
             <input type="text" placeholder="Ваш айди" id="proofs">
             <button id="ban">Отправить заявку</button>
         </form>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
             let tg = window.Telegram.WebApp;
             let ban = document.getElementById("ban");
@@ -41,7 +41,8 @@
                     proofs: proofs,
                     name: name,
                 }
-                tg.sendData(JSON.stringify(data));
+                tg.sendData(JSON.stringify(data))
+                tg.close();
             })
 
         </script>
