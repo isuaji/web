@@ -68,7 +68,8 @@ form input {
 	margin-left:39%;
 	width: 23%;
 	height: 15px;
-	border: var(--tg-theme-button-color);
+	background-color: var(--tg-theme-button-color);
+    
     border: 5px;
 }
 
