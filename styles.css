@@ -61,15 +61,17 @@ form {
 }
 
 form input {
+    font-family: "Roboto";
+    font-weight: 200;
     display: block;
     clear: both;
 	padding: 10px;
 	margin-bottom: 20px;
 	margin-left:39%;
-	width: 23%;
+	width: 420px;
 	height: 15px;
-	color: var(--tg-theme-button-color);
     border: 5px;
+    border-color: var(--tg-theme-button-text-color);
     background: var(--tg-theme-bg-color);
 }
 
