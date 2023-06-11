@@ -65,8 +65,7 @@ form input {
     font-weight: 200;
     display: block;
     clear: both;
-	padding: 10px;
-	margin-top: 300px;
+	margin-bottom: 20px;
 	margin-left:39%;
 	width: 420px;
 	height: 15px;
@@ -78,7 +77,7 @@ form input {
 button {
     font-family: "Roboto";
     border: 0;
-    border-radius: 5px;
+    border-radius: 5px; 
     margin-top: 50px;
     height: 60px;
     width: 200px;
