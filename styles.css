@@ -89,5 +89,5 @@ button:hover {
     background: var(--tg-theme-secondary-bg-color);
 }
 input:focus {
-    border-color: #db5d5d;
+    border-color: var(--tg-theme-button-color);
 }
