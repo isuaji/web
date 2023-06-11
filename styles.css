@@ -69,9 +69,11 @@ form input {
 	width: 23%;
 	height: 15px;
 	border: var(--tg-theme-button-color);
+    border: 5px;
 }
 
 button {
+    color: var(--tg-theme-button-color);
     font-family: "Roboto";
     border: 0;
     border-radius: 5px;
@@ -82,8 +84,6 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: all 500ms ease;
-    color: var(--tg-theme-button-color);
-    background: var(--tg-theme-button-text-color);
 }
 button:hover {
     background: var(--tg-theme-secondary-bg-color);
