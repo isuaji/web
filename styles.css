@@ -70,6 +70,7 @@ form input {
 	height: 15px;
 	color: var(--tg-theme-button-color);
     border: 5px;
+    background: var(--tg-theme-bg-color);
 }
 
 button {
