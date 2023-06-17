@@ -10,16 +10,19 @@
     </head>
     <body>
         <div id="main">
-            <h1>Ауе епта</h1>
-            <img src="bn.jpg">
-            <p>ЗАБАНЬТЕ ИХ НАХУЙ СУKAAAAA</p>
-            <button id="bnn">Щаааа</button>
+            <h1>Отчет</h1>
+            <img src="images/bn.png" style="background: transparent;">
+            <p>При заполнении будьте внимательны</p>
+            <button id="bnn">Заполнить</button>
         </div>
         <form id="form">
-            <input type="text" placeholder="Айди юзера" id="user_name">
-            <input type="text" placeholder="Причина бана" id="reason">
-            <input type="text" placeholder="Ваш айди" id="proofs">
-            <button id="ban">Отправить заявку</button>
+            <input type="text" placeholder="Игра" id="game">
+            <input type="text" placeholder="RP" id="level">
+            <input type="text" placeholder="S TIER" id="characters">
+            <input type="text" placeholder="S WEAPONS" id="weapons">
+            <input type="text" placeholder="Тег гаранта" id="garant">
+
+            <button id="ban">Отправить отчет</button>
         </form>
         <script>
             let tg = window.Telegram.WebApp;
@@ -33,13 +36,17 @@
                 document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " "  + tg.initDataUnsafe.user.last_name;
             });
             ban.addEventListener("click", () =>{
-                let res = document.getElementById("reason").value;
-                let proof = document.getElementById("proofs").value;
-                let name = document.getElementById("user_name").value;
+                let game = document.getElementById("game").value;
+                let level = document.getElementById("level").value;
+                let pers = document.getElementById("characters").value;
+                let weap = document.getElementById("weapons").value;
+                let garant = document.getElementById("garant").value;
                 let data = {
-                    res: res,
-                    proof: proof,
-                    name: name,
+                    game: game,
+                    level: level,
+                    pers: pers,
+                    weap: weap,
+                    garant: garant,
                 }
                 tg.sendData(JSON.stringify(data))
                 tg.close();
