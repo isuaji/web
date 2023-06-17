@@ -11,8 +11,8 @@
 body {
     font-family: "Roboto";
     font-weight: 200;
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
+    background: #444444;
+    color: #E5E5E5;
 
 }
 #div {
@@ -31,17 +31,19 @@ body {
     width: 100%;
     padding: 20px;
     text-align: center;
+    margin-top: 250px;
 }
 
 h1 {
-    font-family: 'Robotob';
+    font-family: 'Roboto';
     margin-top: 50px;
     margin-bottom: 10px;
+    font-size: 40px;
 }
 
 img {
-    width: 70px;
-    margin: 30px auto;
+    width: 100px;
+    margin: 60px auto;
 
 }
 
@@ -49,12 +51,13 @@ p {
     width: 350px;
     margin: 0 auto;
     font-family: 'Roboto';
+    font-size: 20px;
 }
 
 form {
     display: none;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 400px;
     font-family: 'Roboto';
     font-weight: 200;
 
@@ -66,18 +69,22 @@ form input {
     display: block;
     clear: both;
 	margin-bottom: 20px;
-	margin-left:39%;
+	margin-left:37.5%;
 	width: 420px;
-	height: 15px;
-    border: 5px;
-    border-color: var(--tg-theme-button-text-color);
-    background: var(--tg-theme-bg-color);
+	height: 30px;
+    border: 1.5px solid;
+    border-radius: 15px;
+    border-color: #E3A3B4;
+    background: #171717;
+    color:#E5E5E5;
+    text-align: center;
 }
 
 button {
     font-family: "Roboto";
-    border: 0;
-    border-radius: 5px; 
+    border: 1.5px solid;
+    border-radius: 30px; 
+    border-color: #E3A3B4;
     margin-top: 50px;
     height: 60px;
     width: 200px;
@@ -85,11 +92,13 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: all 500ms ease;
-    background-color: var(--tg-theme-button-color);
+    background-color: #171717;
+    padding: 5px 20px;
+    color:#E5E5E5;
 }
 button:hover {
-    background: var(--tg-theme-secondary-bg-color);
+    background: #171717;
 }
 input:focus {
-    border-color: var(--tg-theme-button-color);
+    border-color: #E5E5E5;
 }
